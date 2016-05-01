@@ -1,0 +1,12 @@
+<link href="/styles.css" type="text/css" rel="stylesheet">
+<body>
+You chose <%= @selected.player.selected %>!
+Computer chose <%= @selected.computer.chosen %>!
+
+You <%= @selected.result %>
+
+
+<form method="get" action="/play">
+    <input type='submit' value='Again!'>
+</form>
+</body>
